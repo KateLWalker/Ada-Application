@@ -11,13 +11,15 @@
 	
 ##### _2. What are your professional goals for the next 2 years, the next 5 years?_
 
-	I am currently taking online classses to complete my bachelors in Management Information  
-	Systems. If accepted into this program I would be taking a hiatus for these courses to  
-	complete the certification your institution is offering. After receiving the certification  
-	for programming I am planning on completing the final year of my bachelors degree and then  
-	seeking employment in an information technology/management area of a business.  I believe  
-	that understanding and being able to program will be incredibly valuable to my career in  
-	the technology field. 
+	I am currently taking online classses to complete my bachelors degree in Management Information  
+	Systems.  In the next 2 years I plan on completing my degree in MIS and will then 
+	seek employment in an information technology/management area of business, where I could work
+	towards becoming an Information Systems Manager or IT Project Manager.  I would like  
+	to find a company where I would be able to learn and move into a management position where I  
+	could utilize my leadership experience.  Within the next 5 years I see myself in a rewarding  
+	career where I can use my education to to help advance me along the ranks in the technology sector.
+	I believe that understanding and utilizing the ablility to program will be incredibly valuable to  
+	my career in the technology field. 
 	
 ##### _3. Tell us about a time you made a mistake that you leared a lot from. If you encountered the situation again, what would you do differently?_
 
@@ -40,5 +42,6 @@
 	the class prepared, having already set up a tutor and worked out a schedule for studying.  
 	It has been very trying because there is not always someone there to answer my questions  
 	and I have had to do a lot of research on my end to find where I am going wrong and how  
-	to complete certain problems. Overall, I have learned that there are a lot of resources  
-	out there to help you learn anything and have become more adept at utilizing them.
+	to complete certain problems. I am more than halfway through the course and am currently  
+	maintaining a 89%.  Overall, I have learned that there are a lot of resources out there  
+	to help you learn anything and have become more adept at utilizing them.
