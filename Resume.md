@@ -33,7 +33,16 @@ _Supervisor_
 #### Education
 
 **[Washington State University](http://www.wsu.edu)**  
-_Management Information Systems ~ Junior_
+_Management Information Systems ~ 108 credit hours completed_
 
+#### Computer Proficiency
+* Data Entry
+* Microsoft Office Suite
+* Exposure to Markdown, Java, HTML/CSS
+* Experience building PC's
+* Basic networking experience
+* Troubleshooting computer issues in the workplace
+
+##### **_[I'm Linked In]_**(https://www.linkedin.com/pub/kathryn-walker/29/794/354)
 
 ###### _References available upon request_
