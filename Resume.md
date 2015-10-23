@@ -43,6 +43,6 @@ _Management Information Systems ~ 108 credit hours completed_
 * Basic networking experience
 * Troubleshooting computer issues in the workplace
 
-##### **_[I'm Linked In]_**(https://www.linkedin.com/pub/kathryn-walker/29/794/354)
+###### [**_I'm Linked In_**](https://www.linkedin.com/pub/kathryn-walker/29/794/354)
 
 ###### _References available upon request_
