@@ -5,9 +5,11 @@
 	first attempt at college without finding a career path that I was passionate about. I wanted  
 	to do something practical, such as accounting, but could not keep myself interested. During  
 	my time out of school I have tried a few different professions, but I find the thing I enjoy  
-	doing the most is interacting with technology. Completing this application has lead me to  
-	research some basic programming applications and have found it all to be very interesting.  
-	I am excited to delve further into the field and discover what it has to offer.
+	doing the most is interacting with technology. As a first step towards understanding one of  
+	the most commonly used programming languages, I am currently working through an introductory  
+	tutorial to Java programming.  Also, at the end of October I will begin another online 
+	course for Java, which will also cover HTML/CSS, through Duke University with the intention 
+	of earning a Java certification.
 	
 ##### _2. What are your professional goals for the next 2 years, the next 5 years?_
 
