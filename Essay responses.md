@@ -1,27 +1,25 @@
 ##### _1. Why are you interested in programming? What have you done to expose yourself to programming so far?_
 
-	I have been interested in computers since I was a teenager. I have a few friends who work as  
-	programmers and have always been interested in the field.  However, I struggled through my  
-	first attempt at college without finding a career path that I was passionate about. I wanted  
-	to do something practical, such as accounting, but could not keep myself interested. During  
-	my time out of school I have tried a few different professions, but I find the thing I enjoy  
-	doing the most is interacting with technology. As a first step towards understanding one of  
-	the most commonly used programming languages, I am currently working through an introductory  
-	tutorial to Java programming.  Also, at the end of October I will begin another online 
-	course for Java, which will also cover HTML/CSS, through Duke University with the intention 
-	of earning a Java certification.
+    	I have been interested in computers since I was a teenager. I have a few friends who work as  
+    	programmers and have always been interested in the field.  However, I struggled through my   
+	first attempt at college without finding a career path that I was passionate about. I wanted   
+	to do something practical, such as accounting, but could not keep myself interested. During   
+	my time out of school I have tried a few different professions, but I find the thing I enjoy   
+	doing the most is interacting with technology. In my attempt to learn about programming, I 
+	have worked through a Java tutorial as well as the Codecademy course for beginning Ruby and 
+	the Jumpstart lessons offered by Ada. I have also installed Ruby and a text editor to continue 
+	working with what I have learned.  It has been challenging and rewarding to work through these 
+	courses and know that each day I am able to program new things.
 	
 ##### _2. What are your professional goals for the next 2 years, the next 5 years?_
 
-	I am currently taking online classses to complete my bachelors degree in Management Information  
-	Systems.  In the next 2 years I plan on completing my degree in MIS and will then 
-	seek employment in an information technology/management area of business, where I could work
-	towards becoming an Information Systems Manager or IT Project Manager.  I would like  
-	to find a company where I would be able to learn and move into a management position where I  
-	could utilize my leadership experience.  Within the next 5 years I see myself in a rewarding  
-	career where I can use my education to to help advance me along the ranks in the technology sector.
-	I believe that understanding and utilizing the ablility to program will be incredibly valuable to  
-	my career in the technology field. 
+	I am currently taking online classes to complete my bachelor’s degree in Management Information  
+	Systems. In the next 2 years, I would like to continue pursuing my degree online while working 
+	a full time position as a software developer.  I plan to use my bachelor’s degree, which offers 
+	me experience in project management and IT, and combine it with my growing knowledge of various 
+	programming languages to allow me the opportunity to work as a software developer.  In the next 
+	5 years, I feel that I would have the field experience to fully realize my plan to lead an 
+	innovative software development team in a growing organization. 
 	
 ##### _3. Tell us about a time you made a mistake that you leared a lot from. If you encountered the situation again, what would you do differently?_
 
