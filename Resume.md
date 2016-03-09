@@ -38,7 +38,7 @@ _Management Information Systems ~ 108 credit hours completed_
 #### Computer Proficiency
 * Data Entry
 * Microsoft Office Suite
-* Exposure to Markdown, Java, HTML/CSS
+* Exposure to Markdown, Java, and Ruby
 * Experience building PC's and installing operating systems
 * Basic networking experience
 * Troubleshooting computer issues in the workplace
