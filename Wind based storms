@@ -1,0 +1,56 @@
+# How many wind based storms happened between 8AM PST and 11AM PST in 1957?
+-321 storms
+# To begin this question I had to remove the rows for County/Parish, Zone, or Marine names beginning with a vowel so I changed the file name in the Ruby program that I used previously and ran this file through, then I took the information printed into the terminal, and created a new csv file for this storm data.  After that I had to account for the difference in time zones, as the file has the data set as CST and the answer asked for PST.  Since the difference in these time zones is two hours, I just adjusted the parameters to sort for 10am – 1pm CST.  I also had to decide what was considered a “wind based storm”.  In order to do this I found more information on the National Centers for Environmental Information on their classifications of event types.  I then went through this list and wrote a code to print all lines from my new csv file that involved these types of storms.  I have posted this code below:
+
+require 'csv'
+CSV.foreach('filename.csv', headers:true) do |row|
+	if row['EVENT_TYPE'] == "Blizzard"
+		puts row
+	elsif row['EVENT_TYPE'] == "Cold/Wind Chill"
+		puts row
+	elsif row['EVENT_TYPE'] == "Dust Devil"
+		puts row
+	elsif row['EVENT_TYPE'] == "Dust Storm"
+		puts row
+	elsif row['EVENT_TYPE'] == "Extreme Cold/Wind Chill"
+		puts row
+	elsif row['EVENT_TYPE'] == "Funnel Cloud"
+		puts row
+	elsif row['EVENT_TYPE'] == "High Wind"
+		puts row
+	elsif row['EVENT_TYPE'] == "Hurricane (Typhoon)"
+		puts row
+	elsif row['EVENT_TYPE'] == "Marine High Wind"
+		puts row
+	elsif row['EVENT_TYPE'] == "Marine Strong Wind"
+		puts row
+	elsif row['EVENT_TYPE'] == "Marine Thunderstorm Wind"
+		puts row
+	elsif row['EVENT_TYPE'] == "Strong Wind"
+		puts row
+	elsif row['EVENT_TYPE'] == "Thunderstorm Wind"
+		puts row
+	elsif row['EVENT_TYPE'] == "Tornado"
+		puts row
+	elsif row['EVENT_TYPE'] == "Tropical Depression"
+		puts row
+	elsif row['EVENT_TYPE'] == "Tropical Storm"
+		puts row
+	elsif row['EVENT_TYPE'] == "Waterspout"
+		puts row
+	else
+	end
+end
+
+# Again, this printed information that I changed into a csv file and used another program to print out only the storms that took place during the required time period using the code below.
+
+require 'csv'
+CSV.foreach('filename.csv', headers:true) do |row|
+	if row['BEGIN_TIME'].to_i >= (1000)
+		if row ['END_TIME'].to_i <= (1300)
+		puts row
+		end
+	end
+end
+
+# I was then able to take the information that was printed into the terminal, save it as a csv, and open it in Excel to see that 321 storms took place between 8am – 11am PST in 1957.
