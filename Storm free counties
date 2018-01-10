@@ -1,0 +1,15 @@
+# How many counties in the state of Washington that do not begin wit a vowel remained storm free in 2007?
+Answer: 15 counties 
+
+#Before answering this question, I had to remove all of the rows where the County/Parish, Zone or Marine name began with a vowel.  To do this I wrote a program in TextWrangler using Ruby and then printed in the terminal only the rows in which the CZ_NAME column did not begin with a vowel.   I did this with the following code:
+require 'csv'
+CSV.foreach(‘filename.csv', headers:true) do |row|
+	if row['CZ_NAME'].start_with? ("A")
+	elsif row['CZ_NAME'].start_with? ("E")	
+	elsif row['CZ_NAME'].start_with? ("I")
+	elsif row['CZ_NAME'].start_with? ("O")
+	elsif row['CZ_NAME'].start_with? ("U")    
+	else
+	  puts row
+  end
+end
