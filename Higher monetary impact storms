@@ -1,0 +1,86 @@
+# In which year (1957 or 2007) did storms have a higher monetary impact within the boundaries of the Louisiana Purchase territory?
+-2007
+
+# This question had to be broken down into a few parts in order to find the solution.  To begin, I had to find the latitude and longitude of the Louisiana Purchase.  Due to the fact that this area was not a square, I decided to break the area of the Louisiana Purchase into smaller rectangles to get a more accurate estimation of the area.  Once I had the boundaries of the Louisiana Purchase, I wrote a code to only print the rows that were within this area.  However, due to the fact that the longitude was displayed as a negative number in the csv file, I had to create variables that I used throughout for each item and multiply the longitude variables by -1 to make them integers.  I then created a new csv files for the outputs for each year.  This code is included below:
+
+require 'csv'
+CSV.foreach('filename.csv', headers:true) do |row|
+	begin_lon = row['BEGIN_LON'].to_i * -1
+	end_lon = row['END_LON'].to_i * -1
+	begin_lat = row['BEGIN_LAT'].to_i
+	end_lat = row['END_LAT'].to_i
+	
+	if begin_lon >= 90 and begin_lon <= 94.99
+	  if begin_lat >= 30 and begin_lat <= 50
+	    puts row
+	  end
+	end
+	    
+	if end_lon >= 90 and end_lon <= 94.99	  
+	  if end_lat >= 30 and end_lat <= 50
+		puts row
+	  end
+	end
+		
+	if begin_lon >= 95 and begin_lon <= 99.99
+	  if begin_lat >= 34 and begin_lat <= 50
+	  	puts row
+	  end
+	end
+	  	
+	if end_lon >= 95 and end_lon <= 99.99	      
+	  if end_lat >= 34 and end_lat <= 50
+		puts row
+	  end
+	end
+		
+	if begin_lon >= 100 and begin_lon <= 107.99
+	  if begin_lon >= 38 and begin_lon <= 50
+		puts row
+	  end
+	end
+		
+	if end_lon >= 100 and end_lon <= 107.99      
+	  if end_lon >= 38 and end_lon <= 50
+	  	puts row
+	  end
+	end
+	  	
+	if begin_lon >= 108 and begin_lon <= 110
+	  if begin_lon >= 43 and end_lon <= 50
+	   	puts row
+	  end
+	end
+	   	   
+	if end_lon >= 108 and end_lon <= 110      
+	  if end_lon >= 43 and end_lon <= 50
+		puts row
+	  end
+       end
+end
+
+# Once I had the information for the storms within the Louisiana Purchase, I realized that the columns for property and crops damage were in both millions and thousands abbreviations.  In order to get all of these values in a consistent form I wrote a code that would identify if the column contains a “M” or “K” and handled that row accordingly, while also dealing with nil values.  Throughout this code I also had to change the information in the column from strings into integers to complete the mathematical equations and then back into strings to be able to access them in a csv format.  This is shown below:
+
+require 'csv'
+CSV.foreach('LP2007.csv', headers:true) do |row|
+	property = row['DAMAGE_PROPERTY'].to_s
+	if property.nil? 	
+	elsif property.include? "M"
+		property = property.to_f * 1000000
+			puts property.to_s + ","
+	elsif property.include? "K"
+		property = property.to_f * 1000
+			puts property.to_s + ","	
+	end
+	crops = row['DAMAGE_CROPS'].to_s
+	if crops.nil? 
+	elsif crops.include? "M"
+		crops = crops.to_f * 1000000
+			puts crops.to_s + ","
+	elsif crops.include? "K"
+		crops = crops.to_f * 1000
+			puts crops.to_s + ","
+	end
+end
+
+# This then printed just the damages amount for both property and crops in each year and I compared the total amount of damages in 1957 to 2007 to reach the conclusion that in 2007 the amount of damages within the Louisiana Purchase were $3,887,672,700 and in 1957 the damages were $272,994,980.
