@@ -1,7 +1,8 @@
-# How many counties in the state of Washington that do not begin wit a vowel remained storm free in 2007?
+# How many counties in the state of Washington that do not begin with a vowel remained storm free in 2007?
 Answer: 15 counties 
 
-#Before answering this question, I had to remove all of the rows where the County/Parish, Zone or Marine name began with a vowel.  To do this I wrote a program in TextWrangler using Ruby and then printed in the terminal only the rows in which the CZ_NAME column did not begin with a vowel.   I did this with the following code:
+# Before answering this question, I had to remove all of the rows where the County/Parish, Zone or Marine name began with a vowel.  To do this I wrote a program in TextWrangler using Ruby and then printed in the terminal only the rows in which the CZ_NAME column did not begin with a vowel.   I did this with the following code:
+
 require 'csv'
 CSV.foreach(‘filename.csv', headers:true) do |row|
 	if row['CZ_NAME'].start_with? ("A")
@@ -13,3 +14,17 @@ CSV.foreach(‘filename.csv', headers:true) do |row|
 	  puts row
   end
 end
+
+# I copied this information from the terminal and saved it as a csv.  I then moved on to extracting only the rows that contains information about storms in Washington state counties.  I did this by running the new file through the following:
+
+require 'csv'
+CSV.foreach('filename.csv', headers:true) do |row|
+	if row['STATE'] == "WASHINGTON"
+		if row['CZ_TYPE'] == "C"
+		  puts row['CZ_NAME'] 
+	else
+		end
+	end
+end
+
+# I then copied the output from the terminal and saved it as another csv file that I could open in Excel.  I used Excel to delete duplicate entries and then counted the rows to find that 21 out of the 36 counties in Washington State had storms in 2007, meaning that 15 counties remained storm free in 2007.
